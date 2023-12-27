@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+body{
+    background-color: #F7F7F7;
+}
+
+#nav{
+    /* height: 120px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    padding: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+
+#nav-part-1{
+    height: 83px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#nav-part-1 svg{
+    display: block;
+}
+#nav #nav-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px
+}
+#links{
+    padding: 10px;
+}
+#nav-part-2 #links a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    margin:0 20px;
+    text-transform: uppercase;
+}
+
+#nav-part-2 #icons i{
+    font-size: 18px;
+    margin:0 20px;
+    font-weight: 100;
+}
+
+#icons{
+    padding:10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0,1vh;
+    padding-top: 16vw;
+    
+}
+
+#page1 h1{
+    font-family: futura;
+    font-size: 15.2vw;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 3vw 2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+    scale: 0;
+
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw  2vw;
+    justify-content: space-between;
+
+    
+}
+#page2 .elem{
+    height: 100%;
+    width: 32%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+
+#page2 .elem .details{
+    height: 54px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    
+    background-color: palegoldenrod; 
+}
+
+#page2 .elem .details:hover{
+    height: 200px;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child{
+    height: 55vh;
+    width: 40vw;
+    /* background: #000; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+    scale: 1.1;
+    justify-content: center;
+}   
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: bisque;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    /* z-index: ; */
+}
+
+@media (max-width:600px){
+    #nav{
+        /* height: 120px; */
+        width: 100%;
+        /* background-color: burlywood; */
+        position: fixed;
+        z-index: 99;
+        padding: 12px;
+        display: flex;
+        align-items: flex-start;
+        justify-content:space-between;
+    }
+    
+    #nav-part-1{
+        height: 70px;
+        /* background-color: red; */
+        overflow: hidden;
+    }
+    #nav-part-1 svg{
+        display: block;
+        height: 69px;
+        width: 80px;
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+    #nav #nav-part-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:40px
+    }
+    #links{
+        padding: 10px;
+        display: none
+    }
+
+    
+    #nav-part-2 #icons i{
+        font-size: 18px;
+        margin:0 15px;
+        font-weight: 100;
+    }
+    
+    #icons{
+        padding:7px;
+        border-radius: 50px;
+        background-color: #F7F7F7;
+    }
+    
+    
+    
+    #page1{
+        min-height: 70vh;
+        padding: 0,3vh;
+        padding-top: 25vh;
+        
+    }
+    #page1 h1{
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+    }
+    #video-container{
+        height: 25vh;
+        margin-top: 3vw;
+    }
+    #video-container #play{
+        padding: 9vw 6.8vw;
+        font-size: 4vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+    }
+    #page2{
+        flex-direction: column;
+        padding: 4vw  3vw;
+    }
+    #page2 .elem{
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 3vw ;
+    }
+    
+    #page3{
+        min-height: 120vh;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .child{
+        height: 55vh;
+        width: 88vw;
+        padding: 10vw;
+        /* background: #000; */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:15vw
+    }
+    .child img{
+        scale: 1.1;
+        justify-content: center;
+    }   
+}
